@@ -5,7 +5,7 @@
 
 
 body.light-mode {
-    background-image: url('./img/bodyBackground1.png') !important;
+    background-image: url('/img/bodyBackground1.png') !important;
     opacity: 0.9;
     background-repeat: no-repeat; /* Evita que la imagen se repita */
     background-size: cover; /* Cubre toda la pantalla */
@@ -33,7 +33,7 @@ body.light-mode {
   
   /* Estilos de la navbar */
   .navbar {
-    background-image: url(/img/navbarBackground.png);
+    background-image: url(img/navbarBackground.png);
     border: 2px solid rgba(0, 0, 0, 0.874);
   }
   
