@@ -14,7 +14,7 @@ body.light-mode {
   
   /* Imagen de fondo para el modo oscuro */
   body.dark-mode {
-    background-image: url('bodyBackground2.png');
+    background-image: url('./img/bodyBackground2.png');
     opacity: 0.9;
     background-repeat: no-repeat; /* Evita que la imagen se repita */
     background-size: cover; /* Cubre toda la pantalla */
@@ -33,7 +33,7 @@ body.light-mode {
   
   /* Estilos de la navbar */
   .navbar {
-    background-image: url(navbarBackground.png);
+    background-image: url(./img/navbarBackground.png);
     border: 2px solid rgba(0, 0, 0, 0.874);
   }
   
@@ -91,7 +91,7 @@ body.light-mode {
   
   /* ESTILOS JUMBOTRON */
   .jumbotron {
-    background-image: url(jumboBackground.png);
+    background-image: url(./img/jumboBackground.png);
     opacity: 0.9;
     background-size: cover;
     background-color: rgba(0, 0, 0, 0.2);
