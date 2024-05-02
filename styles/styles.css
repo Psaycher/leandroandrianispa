@@ -5,7 +5,7 @@
 
 
 body.light-mode {
-    background-image: url('bodyBackground1.png') !important;
+    background-image: url('./img/bodyBackground1.png') !important;
     opacity: 0.9;
     background-repeat: no-repeat; /* Evita que la imagen se repita */
     background-size: cover; /* Cubre toda la pantalla */
