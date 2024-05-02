@@ -1,0 +1,136 @@
+/* PALETA DE COLORES */
+/*FONDO OSCURO : #343a40*/
+
+/* Imagen de fondo para el modo claro */
+
+
+body.light-mode {
+    background-image: url('bodyBackground1.png') !important;
+    opacity: 0.9;
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-size: cover; /* Cubre toda la pantalla */
+    background-position: center; /* Centra la imagen */
+  }
+  
+  /* Imagen de fondo para el modo oscuro */
+  body.dark-mode {
+    background-image: url('bodyBackground2.png');
+    opacity: 0.9;
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-size: cover; /* Cubre toda la pantalla */
+    background-position: center; /* Centra la imagen */
+  }
+  
+  body, h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .navbar-brand,
+  .navbar-nav .nav-link,
+  .navbar .btn {
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  /* Estilos de la navbar */
+  .navbar {
+    background-image: url(navbarBackground.png);
+    border: 2px solid rgba(0, 0, 0, 0.874);
+  }
+  
+  .nav-item {
+    margin-right: 10px;
+  }
+  
+  .navbar .btn-primary,
+  .navbar .btn-secondary {
+    border-radius: 10px;
+    color: #ffffff !important;
+  }
+  
+  .navbar .btn-primary {
+    background-color: #000000;
+    border: 2px solid #343a40;
+  }
+  
+  .navbar .btn-primary:hover {
+    background-color: #ffffff;
+    color: #000000 !important;
+    border-color: #343a40;
+  }
+  
+  .navbar .btn-secondary {
+    background-color: #000000;
+    border: 2px solid #ffffff;
+  }
+  
+  .navbar .btn-secondary:hover {
+    background-color: #ffffff;
+    color: #000000 !important;
+  }
+  
+  #english-version-btn {
+    color: black;
+    background: linear-gradient(to bottom, #b22234, #b22234 33%, #ffffff 33%, #ffffff 66%, #3c3b6e 66%);
+    border: 2px solid #ffffff;
+    font-weight: 900;
+    color: black !important; 
+    border-radius: 0;
+  }
+  
+  /* Estilo del botón de modo oscuro cuando está activo */
+  .dark-mode #dark-mode-btn {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+  }
+  
+  /* Estilo del botón de modo oscuro cuando está inactivo */
+  #dark-mode-btn {
+    background-color: #343a40 !important;
+    color: #ffffff !important;
+  }
+  
+  /* ESTILOS JUMBOTRON */
+  .jumbotron {
+    background-image: url(jumboBackground.png);
+    opacity: 0.9;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.2);
+    border: 4px solid black;
+    border-radius: 20px;
+    color: #ffffff;
+  }
+  
+  .jumbotron .btn-primary {
+    background-color: #ffffff;
+    color: #000000;
+    border: 2px solid #000000;
+  }
+  
+  .jumbotron .btn-primary:hover {
+    background-color: #000000;
+    color: #f8f9fa;
+    border-color: #ffffff;
+  }
+  
+  .jumbotron .nav-link {
+    color: #ffffff;
+  }
+  
+  .jumbotron .nav-link:hover {
+    color: #ffffff;
+  }
+  
+  .dark-mode {
+    background-color: #343a40;
+    color: #ffffff;
+  }
+  
+  .dark-mode .jumbotron {
+    background-color: #000000;
+  }
+  
+  .active-btn {
+    background-color: #343a40;
+    color: #ffffff;
+  }
+  
