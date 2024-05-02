@@ -33,7 +33,7 @@ body.light-mode {
   
   /* Estilos de la navbar */
   .navbar {
-    background-image: url(./img/navbarBackground.png);
+    background-image: url(/img/navbarBackground.png);
     border: 2px solid rgba(0, 0, 0, 0.874);
   }
   
