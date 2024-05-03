@@ -1,136 +1,277 @@
-/* PALETA DE COLORES */
-/*FONDO OSCURO : #343a40*/
-
-/* Imagen de fondo para el modo claro */
-
-
+/* Imagen de fondo */
 body.light-mode {
-    background-image: url('../img/bodyBackground1.png') !important;
-    opacity: 0.9;
-    background-repeat: no-repeat; /* Evita que la imagen se repita */
-    background-size: cover; /* Cubre toda la pantalla */
-    background-position: center; /* Centra la imagen */
+  background-image: url('../img/bodyBackground1.png') !important;
+  opacity: 0.9;
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  background-size: cover; /* Cubre toda la pantalla */
+  background-position: center; /* Centra la imagen */
+}
+
+.container-fluid {
+  max-width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
   }
-  
-  /* Imagen de fondo para el modo oscuro */
-  body.dark-mode {
-    background-image: url('../img/bodyBackground2.png');
-    opacity: 0.9;
-    background-repeat: no-repeat; /* Evita que la imagen se repita */
-    background-size: cover; /* Cubre toda la pantalla */
-    background-position: center; /* Centra la imagen */
-  }
-  
-  body, h1, h2, h3, h4, h5, h6 {
-    font-family: 'Montserrat', sans-serif;
-  }
-  
-  .navbar-brand,
-  .navbar-nav .nav-link,
-  .navbar .btn {
-    font-family: 'Roboto', sans-serif;
-  }
-  
-  /* Estilos de la navbar */
-  .navbar {
-    background-image: url(../img/navbarBackground.png);
-    border: 2px solid rgba(0, 0, 0, 0.874);
-  }
-  
-  .nav-item {
-    margin-right: 10px;
-  }
-  
-  .navbar .btn-primary,
-  .navbar .btn-secondary {
-    border-radius: 10px;
-    color: #ffffff !important;
-  }
-  
-  .navbar .btn-primary {
-    background-color: #000000;
-    border: 2px solid #343a40;
-  }
-  
-  .navbar .btn-primary:hover {
-    background-color: #ffffff;
-    color: #000000 !important;
-    border-color: #343a40;
-  }
-  
-  .navbar .btn-secondary {
-    background-color: #000000;
-    border: 2px solid #ffffff;
-  }
-  
-  .navbar .btn-secondary:hover {
-    background-color: #ffffff;
-    color: #000000 !important;
-  }
-  
-  #english-version-btn {
-    color: black;
-    background: linear-gradient(to bottom, #b22234, #b22234 33%, #ffffff 33%, #ffffff 66%, #3c3b6e 66%);
-    border: 2px solid #ffffff;
-    font-weight: 900;
-    color: black !important; 
-    border-radius: 0;
-  }
-  
-  /* Estilo del botón de modo oscuro cuando está activo */
-  .dark-mode #dark-mode-btn {
-    background-color: #ffffff !important;
-    color: #000000 !important;
-  }
-  
-  /* Estilo del botón de modo oscuro cuando está inactivo */
-  #dark-mode-btn {
-    background-color: #343a40 !important;
-    color: #ffffff !important;
-  }
-  
-  /* ESTILOS JUMBOTRON */
-  .jumbotron {
-    background-image: url(../img/jumboBackground.png);
-    opacity: 0.9;
-    background-size: cover;
-    background-color: rgba(0, 0, 0, 0.2);
-    border: 4px solid black;
-    border-radius: 20px;
-    color: #ffffff;
-  }
-  
-  .jumbotron .btn-primary {
-    background-color: #ffffff;
-    color: #000000;
-    border: 2px solid #000000;
-  }
-  
-  .jumbotron .btn-primary:hover {
-    background-color: #000000;
-    color: #f8f9fa;
-    border-color: #ffffff;
-  }
-  
-  .jumbotron .nav-link {
-    color: #ffffff;
-  }
-  
-  .jumbotron .nav-link:hover {
-    color: #ffffff;
-  }
-  
-  .dark-mode {
-    background-color: #343a40;
-    color: #ffffff;
-  }
-  
-  .dark-mode .jumbotron {
-    background-color: #000000;
-  }
-  
-  .active-btn {
-    background-color: #343a40;
-    color: #ffffff;
-  }
-  
+
+
+body.dark-mode {
+  background-image: url('../img/bodyBackground2.png');
+  opacity: 0.9;
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  background-size: cover; /* Cubre toda la pantalla */
+  background-position: center; /* Centra la imagen */
+}
+
+/* Fuentes */
+body, h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.navbar-brand,
+.navbar-nav .nav-link,
+.navbar .btn {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Navbar */
+.navbar {
+  background-image: url(../img/navbarBackground.png);
+  border: 2px solid rgba(0, 0, 0, 0.874);
+}
+
+/* Botón primario activo */
+.navbar .nav-link.btn-primary.active,
+.navbar .nav-link.btn-primary:active,
+.navbar .navbar .btn-primary.active,
+.navbar .navbar .btn-primary:active {
+    background-color: #000000 !important; /* Cambia el color de fondo al hacer clic */
+    border-color: #343a40 !important; /* Cambia el color del borde al hacer clic */
+    color: #ffffff !important; /* Cambia el color del texto al hacer clic */
+}
+
+/* Eliminar borde celeste en botón primario */
+.navbar .btn-primary:focus,
+.navbar .btn-primary.focus,
+.navbar .btn-primary:active,
+.navbar .btn-primary.active {
+    outline: none !important;
+    box-shadow: none !important;
+    border-color: transparent !important;
+}
+
+/* Eliminar background celeste en botón "Inicio" */
+.nav-link.btn-primary:not(.dropdown-toggle):active,
+.nav-link.btn-primary.active {
+    background-color: transparent !important;
+}
+
+/* Eliminar background celeste en opciones del menú "Curriculum Vitae" */
+.dropdown-item.active,
+.dropdown-item:active {
+    background-color: transparent !important;
+}
+
+/* Elementos de la navbar */
+.nav-item {
+  margin-right: 10px;
+}
+
+/* Anulando el color de fondo del botón primario de Bootstrap */
+.navbar .nav-link.btn-primary.active,
+.navbar .nav-link.btn-primary:active,
+.navbar .navbar .btn-primary.active,
+.navbar .navbar .btn-primary:active {
+    background-color: transparent !important;
+}
+
+
+/* Botones de la navbar */
+.navbar .btn-primary,
+.navbar .btn-secondary {
+  border-radius: 10px;
+  color: #ffffff !important;
+}
+
+.navbar .btn-primary {
+  background-color: #000000;
+  border: 2px solid #343a40;
+}
+
+.navbar .btn-primary:hover {
+  background-color: #ffffff;
+  color: #000000 !important;
+  border-color: #343a40;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar .btn-secondary {
+  background-color: #000000;
+  border: 2px solid #ffffff;
+}
+
+.navbar .btn-secondary:hover {
+  background-color: #ffffff;
+  color: #000000 !important;
+  border-color: #ffffff;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Botón de versión en inglés */
+#english-version-btn {
+  color: black;
+  text-decoration: solid black 1px;
+  background: linear-gradient(to bottom, #b22234, #b22234 33%, #ffffff 33%, #ffffff 66%, #3c3b6e 66%);
+  border: 2px solid #ffffff;
+  font-weight: 900;
+  color: black !important; 
+  border-radius: 0;
+}
+
+/* Botón de modo oscuro activo */
+.dark-mode #dark-mode-btn {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+}
+
+/* Botón de modo oscuro inactivo */
+#dark-mode-btn {
+  background-color: #343a40 !important;
+  color: #ffffff !important;
+}
+
+/* ESTILOS JUMBOTRON */
+.jumbotron {
+  background-image: url(../img/jumboBackground.png);
+  opacity: 0.9;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.2);
+  border: 4px solid black;
+  border-radius: 20px;
+  color: #ffffff;
+}
+
+.jumbotron .btn-primary {
+  background-color: #ffffff;
+  color: #000000;
+  border: 2px solid #000000;
+  transition: all 0.3s ease-in-out;
+    
+}
+
+.jumbotron .btn-primary:hover {
+  background-color: #000000;
+  color: #f8f9fa;
+  border-color: #ffffff;
+}
+
+.jumbotron .nav-link {
+  color: #ffffff;
+}
+
+.jumbotron .nav-link:hover {
+  color: #ffffff;
+}
+
+/* FORMACION */
+#sobre_mi h2, #formacion h2, #experiencia_laboral h2, #hard_skills h2, #soft_skills h2, #certificaciones h2, #proyectos h2, #contacto h2 {
+  color: #333; /* Color del texto */
+  font-family: 'Montserrat', sans-serif; /* Tipo de fuente */
+  font-size: 2.5rem; /* Tamaño del texto */
+  font-weight: 700; /* Grosor de la fuente */
+  text-align: center; /* Alineación del texto */
+  margin-bottom: 30px; /* Margen inferior */
+}
+
+/* HABILIDADES */
+#hard_skills ul {
+  columns: 3; /* Divide la lista en tres columnas */
+  -webkit-columns: 3; /* Soporte para navegadores WebKit */
+  -moz-columns: 3; /* Soporte para navegadores basados en Gecko (Firefox) */
+  list-style-type: none; /* Quita los puntos de la lista */
+  text-align: center; /* Alinea el contenido al centro */
+}
+
+.columns {
+  columns: 3; /* Divide el contenido en tres columnas */
+}
+
+.column-title {
+  font-weight: bold; /* Texto en negrita */
+  background-color: #f0f0f0; /* Color de fondo */
+  border-bottom: px solid #ccc; /* Borde inferior */
+  padding: 5px 0; /* Espaciado interno */
+  position: sticky; /* Mantener fijo en la parte superior */
+  top: 0; /* Desde la parte superior */
+  z-index: 1; /* Z-index para asegurar que esté por encima del contenido */
+}
+
+.skill-item {
+  margin-bottom: 5px;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.skill-item i {
+  margin-right: 5px;
+  font-size: 20px;
+}
+
+.skill-item strong {
+  font-weight: bold;
+  color: #000000; /* Color azul para resaltar los títulos */
+}
+
+
+/* Estilo para los elementos de la lista */
+#hard_skills li {
+  display: flex; /* Muestra los elementos en línea */
+  margin: 10px 20px; /* Margen entre los elementos */
+}
+
+
+
+/* Modo oscuro */
+.dark-mode {
+  background-color: #343a40;
+  color: #ffffff;
+}
+
+.dark-mode .jumbotron {
+  background-color: #000000;
+}
+
+/* Botón activo */
+.active-btn {
+  background-color: #343a40;
+  color: #ffffff;
+}
+
+/* Estilo para eliminar el fondo celeste al hacer clic en los botones */
+.nav-link.btn-primary:not(.dropdown-toggle):active,
+.nav-link.btn-primary.active {
+    background-color: transparent !important;
+}
+
+/* Estilo para eliminar el borde azul al hacer clic en los botones */
+.nav-link.btn-primary:not(.dropdown-toggle):active,
+.nav-link.btn-primary.active {
+    border-color: transparent !important;
+}
+
+/* Estilo para eliminar el fondo celeste al hacer clic en el botón "Inicio" */
+.navbar .nav-item #inicio-btn.nav-link.btn-primary:not(.dropdown-toggle):active,
+.navbar .nav-item #inicio-btn.nav-link.btn-primary.active {
+    background-color: transparent !important;
+}
+
+/* Estilo para eliminar el borde azul al hacer clic en el botón "Inicio" */
+.navbar .nav-item #inicio-btn.nav-link.btn-primary:not(.dropdown-toggle):active,
+.navbar .nav-item #inicio-btn.nav-link.btn-primary.active {
+    border-color: transparent !important;
+}
+
+/* Estilo para eliminar el fondo celeste al seleccionar opciones en el menú desplegable de "Curriculum Vitae" */
+.navbar .dropdown-menu #curriculum-btn.dropdown-item.active,
+.navbar .dropdown-menu #curriculum-btn.dropdown-item:active {
+    background-color: transparent !important;
+}

@@ -44,15 +44,36 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link btn btn-primary" href="#inicio">Inicio</a>
+              <a class="nav-link btn btn-primary" href="#jumbotron">Inicio</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link btn btn-primary" href="#sobre-mi">Sobre Mí</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link btn btn-primary" href="#habilidades"
-                >Habilidades</a
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle btn btn-primary"
+                href="#"
+                id="cvDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
               >
+                Curriculum Vitae
+              </a>
+              <div class="dropdown-menu" aria-labelledby="cvDropdown">
+                <a class="dropdown-item" href="#formacion">Formación</a>
+                <a class="dropdown-item" href="#experiencia-laboral"
+                  >Experiencia Laboral</a
+                >
+
+                <div class="dropdown-divider"></div>
+                <!-- Separador entre las secciones -->
+                <a class="dropdown-item" href="#soft-skills">Soft Skills</a>
+                <a class="dropdown-item" href="#hard_skills">Hard Skills</a>
+                <div class="dropdown-divider"></div>
+                <!-- Separador entre las secciones -->
+                <a class="dropdown-item" href="#certificaciones"
+                  >Certificaciones</a
+                >
+              </div>
             </li>
             <li class="nav-item">
               <a class="nav-link btn btn-primary" href="#proyectos"
@@ -60,10 +81,9 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link btn btn-primary" href="#curriculum-vitae"
-                >Curriculum Vitae</a
-              >
+              <a class="nav-link btn btn-primary" href="#sobre-mi">Sobre mí</a>
             </li>
+
             <li class="nav-item">
               <a class="nav-link btn btn-primary" href="#contacto">Contacto</a>
             </li>
@@ -86,31 +106,25 @@
       </div>
     </nav>
     <!-- Sección Jumbo-->
-    <div class="container mt-5" style="padding-top: 70px">
+    <div class="container-fluid mt-1" style="padding-top: 70px" id="jumbotron">
       <div class="jumbotron text-center">
         <h1 class="display-4">Leandro Andriani</h1>
         <p class="lead">Programador Full Stack</p>
         <p>
           Ante cualquier consulta, no dudes en:
-          <a href="#contacto" class="btn btn-primary d-inline-block mx-2"
-            >Contactarme</a
-          >
+          <a href="#contacto" class="btn btn-primary rounded d-inline-block mx-2">Contactarme</a>
           <br />
           You can also visit the
-          <a
-            href="futura-web-en-ingles.html"
-            class="btn btn-primary d-inline-block mx-2"
-            >English version</a
-          >
+          <a href="futura-web-en-ingles.html" class="btn btn-primary rounded d-inline-block mx-2">English version</a>
           from this website
         </p>
       </div>
-    </div>
-<!-- Sección sobre mi-->
-    <section id="sobre-mi">
+
+    <!-- Sección sobre mi-->
+    <section id="sobre_mi">
       <div class="row">
         <div class="col-md-8 mx-auto">
-          <h2 class="mb-4">Sobre Mí</h2>
+          <h2 class="p-5">Sobre Mí</h2>
           <p>
             Mi nombre es Leandro Andriani, tengo 33 años, y actualmente vivo en
             Gualeguaychú, en la provincia de Entre Rios, Argentina. Desde chico
@@ -193,47 +207,127 @@
         </div>
       </div>
     </section>
-    <!-- Habilidades -->
-    <section id="habilidades">
+
+    <!--Sección Formación -->
+    <section id="formacion">
       <div class="row">
         <div class="col-md-8 mx-auto">
-          <h2 class="mb-4">Habilidades Técnicas</h2>
-          <ul>
-            <li><strong>Front-end:</strong></li>
-            <li>HTML5</li>
-            <li>CSS</li>
-            <li>SASS</li>
-            <li>Bootstrap</li>
-            <li>DOM</li>
-            <li>JavaScript</li>
-            <li>JavaScript API</li>
-            <li>React</li>
-            <li>Figma</li>
-            <li>Responsive Design</li>
-            <hr />
-            <li><strong>Back-end y Java:</strong></li>
-            <li>JAVA</li>
-            <li>Maven</li>
-            <li>Junit</li>
-            <li>Mockito</li>
-            <li>POO</li>
-            <li>Java Collection Framework</li>
-            <li>JDBC</li>
-            <li>Patrón DAO</li>
-            <li>JPA</li>
-            <li>Hibernate</li>
-            <hr />
-            <li><strong>Bases de datos y Spring:</strong></li>
-            <li>MySQL</li>
-            <li>DML</li>
-            <li>Spring</li>
-            <li>Spring Boot</li>
-            <li>Spring Security</li>
-            <li>Rest API Spring</li>
-            <li>API REST</li>
-            <li>Postman</li>
-            <li>Patrón DTO</li>
-          </ul>
+          <h2 class="p-5">Formación:</h2>
+        </div>
+      </div>
+
+      <!--Sección Experiencia Laboral -->
+    </section>
+    <section id="experiencia_laboral">
+      <div class="row">
+        <div class="col-md-8 mx-auto">
+          <h2 class="p-5">Experiencia Laboral</h2>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección Hard skills -->
+    <section id="hard_skills">
+      <div class="container text-center">
+        <div class="col">
+          <h2 class="mb-4 text column-title">Hard skills:</h2>
+        </div>
+        <tr>
+          <strong class="display-4 mb-5" id="encabezado">Front-end:</strong>
+        </tr>
+        <div class="row mb-4">
+          <div class="col-md-8 mx-auto">
+            <ul class="list-unstyled">
+              <li class="skill-item"><i class="fab fa-html5"></i>HTML5</li>
+              <li class="skill-item"><i class="fab fa-css3-alt"></i>CSS</li>
+              <li class="skill-item"><i class="fab fa-sass"></i>SASS</li>
+              <li class="skill-item">
+                <i class="fab fa-bootstrap"></i>Bootstrap
+              </li>
+              <li class="skill-item"><i class="fas fa-code"></i>DOM</li>
+              <li class="skill-item"><i class="fab fa-js"></i>JavaScript</li>
+              <li class="skill-item">
+                <i class="fab fa-js-square"></i>JavaScript API
+              </li>
+              <li class="skill-item"><i class="fab fa-react"></i>React</li>
+              <li class="skill-item">
+                <i class="fas fa-paint-brush"></i>Figma
+              </li>
+              <li class="skill-item">
+                <i class="fas fa-mobile-alt"></i>Responsive Design
+              </li>
+            </ul>
+          </div>
+        </div>
+        <tr>
+          <strong class="display-4 mb-5">Back-end y Java:</strong>
+        </tr>
+        <div class="row mb-4">
+          <div class="col-md-8 mx-auto">
+            <ul class="list-unstyled">
+              <li class="skill-item"><i class="fab fa-java"></i>JAVA</li>
+              <li class="skill-item"><i class="fab fa-java"></i>Maven</li>
+              <li class="skill-item"><i class="fas fa-code"></i>Junit</li>
+              <li class="skill-item">
+                <i class="fas fa-clipboard-list"></i> Mockito
+              </li>
+              <li class="skill-item"><i class="fas fa-cogs"></i>POO</li>
+              <li class="skill-item">
+                <i class="fas fa-cogs"></i>Java Collection Framework
+              </li>
+              <li class="skill-item"><i class="fas fa-database"></i>JDBC</li>
+              <li class="skill-item">
+                <i class="fas fa-database"></i> Patrón DAO
+              </li>
+              <li class="skill-item"><i class="fas fa-database"></i> JPA</li>
+              <li class="skill-item">
+                <i class="fas fa-database"></i> Hibernate
+              </li>
+            </ul>
+          </div>
+        </div>
+        <th>
+          <strong class="display-4 mb-5">Bases de datos y Spring:</strong>
+        </th>
+        <div class="row">
+          <div class="col-md-8 mx-auto">
+            <ul class="list-unstyled">
+              <li class="skill-item"><i class="fas fa-database"></i> MySQL</li>
+              <li class="skill-item"><i class="fas fa-database"></i> DML</li>
+              <li class="skill-item"><i class="fas fa-cogs"></i> Spring</li>
+              <li class="skill-item">
+                <i class="fas fa-cogs"></i> Spring Boot
+              </li>
+              <li class="skill-item">
+                <i class="fas fa-lock"></i> Spring Security
+              </li>
+              <li class="skill-item">
+                <i class="fas fa-server"></i> Rest API Spring
+              </li>
+              <li class="skill-item"><i class="fas fa-server"></i> API REST</li>
+              <li class="skill-item">
+                <i class="fas fa-envelope"></i> Postman
+              </li>
+              <li class="skill-item"><i class="fas fa-code"></i> Patrón DTO</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Sección Soft skills -->
+    <section id="soft_skills">
+      <div class="row">
+        <div class="col-md-8 mx-auto">
+          <h2 class="p-5">Soft skills</h2>
+        </div>
+      </div>
+    </section>
+    <!--Sección certificaciones -->
+    <section id="certificaciones">
+      <div class="row">
+        <div class="col-md-8 mx-auto">
+          <h2 class="mb-4">Certificaciones</h2>
         </div>
       </div>
     </section>
@@ -277,6 +371,10 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/526cda1adb.js"
+      crossorigin="anonymous"
+    ></script>
 
     <script>
       // Iniciar la página en modo claro
