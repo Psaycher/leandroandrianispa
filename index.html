@@ -1,124 +1,87 @@
 <!DOCTYPE HTML5>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Leandro Andriani Dev SPA</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-    />
-    <link rel="stylesheet" href="./styles/styles.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-      integrity="sha384-MCw98/SFnGE8FJSjBxXPMGiE+IyXc8fH3c4AjXWszW68lFD6Mr6G8OJkaTJR6v2x"
-      crossorigin="anonymous"
-    />
-  </head>
 
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-      <div class="container">
-        <a class="navbar-brand">Leandro Andriani</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link btn btn-primary" href="#jumbotron">Inicio</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle btn btn-primary"
-                href="#"
-                id="cvDropdown"
-                role="button"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-              >
-                Curriculum Vitae
-              </a>
-              <div class="dropdown-menu" aria-labelledby="cvDropdown">
-                <a class="dropdown-item" href="#formacion">Formación</a>
-                <a class="dropdown-item" href="#experiencia-laboral"
-                  >Experiencia Laboral</a
-                >
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Leandro Andriani Dev SPA</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+  <link rel="stylesheet" href="./styles/styles.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+</head>
 
-                <div class="dropdown-divider"></div>
-                <!-- Separador entre las secciones -->
-                <a class="dropdown-item" href="#soft-skills">Soft Skills</a>
-                <a class="dropdown-item" href="#hard_skills">Hard Skills</a>
-                <div class="dropdown-divider"></div>
-                <!-- Separador entre las secciones -->
-                <a class="dropdown-item" href="#certificaciones"
-                  >Certificaciones</a
-                >
-              </div>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link btn btn-primary" href="#proyectos"
-                >Proyectos</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link btn btn-primary" href="#sobre-mi">Sobre mí</a>
-            </li>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand">Leandro Andriani</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link btn btn-primary" href="#jumbotron">Inicio</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle btn btn-primary" href="#" id="cvDropdown" role="button"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Curriculum Vitae
+            </a>
+            <div class="dropdown-menu" aria-labelledby="cvDropdown">
+              <a class="dropdown-item" href="#formacion">Formación</a>
+              <a class="dropdown-item" href="#experiencia-laboral">Experiencia Laboral</a>
 
-            <li class="nav-item">
-              <a class="nav-link btn btn-primary" href="#contacto">Contacto</a>
-            </li>
-            <li class="nav-item">
-              <button id="dark-mode-btn" class="btn btn-secondary">
-                Modo Oscuro
-              </button>
-            </li>
-            <li class="nav-item">
-              <a
-                id="english-version-btn"
-                href="futura-web-en-ingles.html"
-                class="btn btn-secondary usa-btn"
-              >
-                English Version
-              </a>
-            </li>
-          </ul>
-        </div>
+              <div class="dropdown-divider"></div>
+              <!-- Separador entre las secciones -->
+              <a class="dropdown-item" href="#soft-skills">Soft Skills</a>
+              <a class="dropdown-item" href="#hard_skills">Hard Skills</a>
+              <div class="dropdown-divider"></div>
+              <!-- Separador entre las secciones -->
+              <a class="dropdown-item" href="#certificaciones">Certificaciones</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn btn-primary" href="#proyectos">Proyectos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn btn-primary" href="#sobre-mi">Sobre mí</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link btn btn-primary" href="#contacto">Contacto</a>
+          </li>
+          <li class="nav-item">
+            <button id="dark-mode-btn" class="btn btn-secondary">
+              Modo Oscuro
+            </button>
+          </li>
+          <li class="nav-item">
+            <a id="english-version-btn" href="futura-web-en-ingles.html" class="btn btn-secondary usa-btn">
+              English Version
+            </a>
+          </li>
+        </ul>
       </div>
-    </nav>
-    <!-- Sección Jumbo-->
-    <div class="container-fluid mt-1" style="padding-top: 70px" id="jumbotron">
-      <div class="jumbotron text-center">
-        <h1 class="display-4">Leandro Andriani</h1>
-        <p class="lead">Programador Full Stack</p>
-        <p>
-          Ante cualquier consulta, no dudes en:
-          <a href="#contacto" class="btn btn-primary rounded d-inline-block mx-2">Contactarme</a>
-          <br />
-          You can also visit the
-          <a href="futura-web-en-ingles.html" class="btn btn-primary rounded d-inline-block mx-2">English version</a>
-          from this website
-        </p>
-      </div>
+    </div>
+  </nav>
+  <!-- Sección Jumbo-->
+  <div class="container-fluid mt-1" style="padding-top: 70px" id="jumbotron">
+    <div class="jumbotron text-center">
+      <h1 class="display-4">Leandro Andriani</h1>
+      <p class="lead">Programador Full Stack</p>
+      <p>
+        Ante cualquier consulta, no dudes en:
+        <a href="#contacto" class="btn btn-primary rounded d-inline-block mx-2">Contactarme</a>
+        <br />
+        You can also visit the
+        <a href="futura-web-en-ingles.html" class="btn btn-primary rounded d-inline-block mx-2">English version</a>
+        from this website
+      </p>
+    </div>
 
     <!-- Sección sobre mi-->
     <section id="sobre_mi">
@@ -208,6 +171,47 @@
       </div>
     </section>
 
+    <!-- CARROUSEL -->
+
+    <div id="carouselExampleCaptions" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/foto1.jpg" class="d-block w-100" alt="foto1">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>First slide label</h5>
+            <p>Some representative placeholder content for the first slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/foto2.jpg" class="d-block w-100" alt="foto2">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Second slide label</h5>
+            <p>Some representative placeholder content for the second slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/foto1.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Third slide label</h5>
+            <p>Some representative placeholder content for the third slide.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
     <!--Sección Formación -->
     <section id="formacion">
       <div class="row">
@@ -215,9 +219,10 @@
           <h2 class="p-5">Formación:</h2>
         </div>
       </div>
-
-      <!--Sección Experiencia Laboral -->
     </section>
+
+    <!--Sección Experiencia Laboral -->
+
     <section id="experiencia_laboral">
       <div class="row">
         <div class="col-md-8 mx-auto">
@@ -341,6 +346,7 @@
         </div>
       </div>
     </section>
+
     <!-- Contacto -->
     <section id="contacto">
       <div class="row">
@@ -348,9 +354,7 @@
           <h2 class="mb-4">Contacto</h2>
           <p>
             Correo Electrónico:
-            <a href="mailto:leandroeandriani@gmail.com"
-              >leandroeandriani@gmail.com</a
-            >
+            <a href="mailto:leandroeandriani@gmail.com">leandroeandriani@gmail.com</a>
           </p>
           <p>
             Número de Celular:
@@ -359,22 +363,18 @@
         </div>
       </div>
     </section>
+
     <!-- Footer -->
     <footer class="footer mt-auto py-3 bg-dark text-white fixed-bottom">
       <div class="container text-center">
-        <span class="text-muted"
-          >&copy; 2024 Leandro Andriani. Todos los derechos reservados.</span
-        >
+        <span class="text-muted">&copy; 2024 Leandro Andriani. Todos los derechos reservados.</span>
       </div>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script
-      src="https://kit.fontawesome.com/526cda1adb.js"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"> </script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"> </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"> </script>
+    <script src="https://kit.fontawesome.com/526cda1adb.js" crossorigin="anonymous"></script>
 
     <script>
       // Iniciar la página en modo claro
@@ -396,6 +396,6 @@
           }
           this.classList.toggle("active-btn");
         });
-    </script>
-  </body>
+        </script>
+
 </html>
