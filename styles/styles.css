@@ -1,4 +1,4 @@
-/* Imagen de fondo */
+/* Imagen de fondo modo CLARO */
 body.light-mode {
   background-image: url('../img/bodyBackground1.png') !important;
   opacity: 0.9;
@@ -12,8 +12,7 @@ body.light-mode {
   margin-top: 10px;
   margin-bottom: 10px;
   }
-
-
+/* Imagen de fondo modo OSCURO */
 body.dark-mode {
   background-image: url('../img/bodyBackground2.png');
   opacity: 0.9;
@@ -84,7 +83,7 @@ body, h1, h2, h3, h4, h5, h6 {
     background-color: transparent !important;
 }
 
-
+/* ESTILOS DE LA NAVBAR */
 /* Botones de la navbar */
 .navbar .btn-primary,
 .navbar .btn-secondary {
@@ -138,6 +137,7 @@ body, h1, h2, h3, h4, h5, h6 {
   background-color: #343a40 !important;
   color: #ffffff !important;
 }
+/* FIN de estilos de la  navbar */
 
 /* ESTILOS JUMBOTRON */
 .jumbotron {
@@ -171,6 +171,58 @@ body, h1, h2, h3, h4, h5, h6 {
 .jumbotron .nav-link:hover {
   color: #ffffff;
 }
+
+/* Estilos sobre mi y carrousel */
+
+#carouselExampleCaptions .carousel-control-prev,
+#carouselExampleCaptions .carousel-control-next {
+  background-color: #333; /* Fondo gris oscuro para los botones */
+  width: 30px !important; /* Ancho del botón */
+  height: 100px; /* Alto del botón */
+  margin: auto; /* Centrar horizontalmente */
+  border: none; /* Quitar bordes */
+  display: flex; /* Utilizar flexbox */
+  align-items: center; /* Centrar verticalmente */
+  justify-content: center; /* Centrar contenido horizontalmente */
+  font-size: 20px; /* Tamaño del icono */
+}
+
+#carouselExampleCaptions .carousel-control-prev:hover,
+#carouselExampleCaptions .carousel-control-next:hover {
+  background-color: #555; /* Cambiar color al pasar el mouse */
+}
+
+#carouselExampleCaptions .carousel-control-prev-icon,
+#carouselExampleCaptions .carousel-control-next-icon {
+  color: white; /* Color del icono */
+}
+
+
+
+.carousel-caption {
+  font-weight: bold;
+  color: white; /* Texto blanco para resaltar */
+  padding: 10px; /* Añadir relleno alrededor del texto */
+  text-shadow: 4px 4px 4px black, -4px -4px 4px black, 4px -4px 4px black, -4px 4px 4px black; /* Sombras negras agrandadas y difuminadas en las cuatro direcciones */
+}
+
+
+.carousel-caption h5,
+.carousel-caption p {
+  font-family: 'Montserrat', sans-serif; /* Tipo de fuente */
+  font-size: 1.5rem; /* Tamaño del texto */
+  font-weight: bold;
+  text-shadow: 4px 4px 4px black, -4px -4px 4px black, 4px -4px 4px black, -4px 4px 4px black; /* Sombras negras agrandadas y difuminadas en las cuatro direcciones */
+  padding: 10px; /* Añadir relleno alrededor del texto */
+}
+
+.carousel-caption p {
+  font-size: 1rem; /* Tamaño del texto */
+  font-weight: 500;
+  margin-bottom: 5px;
+    
+}
+
 
 /* FORMACION */
 #sobre_mi h2, #formacion h2, #experiencia_laboral h2, #hard_skills h2, #soft_skills h2, #certificaciones h2, #proyectos h2, #contacto h2 {
