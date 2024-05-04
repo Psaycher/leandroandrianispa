@@ -172,7 +172,7 @@ body, h1, h2, h3, h4, h5, h6 {
   color: #ffffff;
 }
 
-/* Estilos sobre mi y carrousel */
+/* MODIFICACAIONES AL CARROUSEL */
 
 #carouselExampleCaptions .carousel-control-prev,
 #carouselExampleCaptions .carousel-control-next {
@@ -198,15 +198,6 @@ body, h1, h2, h3, h4, h5, h6 {
 }
 
 
-
-.carousel-caption {
-  font-weight: bold;
-  color: white; /* Texto blanco para resaltar */
-  padding: 10px; /* Añadir relleno alrededor del texto */
-  text-shadow: 4px 4px 4px black, -4px -4px 4px black, 4px -4px 4px black, -4px 4px 4px black; /* Sombras negras agrandadas y difuminadas en las cuatro direcciones */
-}
-
-
 .carousel-caption h5,
 .carousel-caption p {
   font-family: 'Montserrat', sans-serif; /* Tipo de fuente */
@@ -222,6 +213,7 @@ body, h1, h2, h3, h4, h5, h6 {
   margin-bottom: 5px;
     
 }
+
 
 
 /* FORMACION */
