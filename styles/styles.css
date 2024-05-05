@@ -1,3 +1,6 @@
+/* Paleta de colores::after
+Gris:
+
 /* Imagen de fondo modo CLARO */
 body.light-mode {
   background-image: url('../img/bodyBackground1.png') !important;
@@ -26,6 +29,10 @@ body, h1, h2, h3, h4, h5, h6 {
   font-family: 'Montserrat', sans-serif;
 }
 
+
+/* ESTILOS DE LA NAVBAR */
+/* FUENTES */
+
 .navbar-brand,
 .navbar-nav .nav-link,
 .navbar .btn {
@@ -38,52 +45,67 @@ body, h1, h2, h3, h4, h5, h6 {
   border: 2px solid rgba(0, 0, 0, 0.874);
 }
 
-/* Botón primario activo */
-.navbar .nav-link.btn-primary.active,
-.navbar .nav-link.btn-primary:active,
-.navbar .navbar .btn-primary.active,
-.navbar .navbar .btn-primary:active {
-    background-color: #000000 !important; /* Cambia el color de fondo al hacer clic */
-    border-color: #343a40 !important; /* Cambia el color del borde al hacer clic */
-    color: #ffffff !important; /* Cambia el color del texto al hacer clic */
-}
-
-/* Eliminar borde celeste en botón primario */
-.navbar .btn-primary:focus,
-.navbar .btn-primary.focus,
-.navbar .btn-primary:active,
-.navbar .btn-primary.active {
-    outline: none !important;
-    box-shadow: none !important;
-    border-color: transparent !important;
-}
-
-/* Eliminar background celeste en botón "Inicio" */
-.nav-link.btn-primary:not(.dropdown-toggle):active,
-.nav-link.btn-primary.active {
-    background-color: transparent !important;
-}
-
-/* Eliminar background celeste en opciones del menú "Curriculum Vitae" */
-.dropdown-item.active,
-.dropdown-item:active {
-    background-color: transparent !important;
-}
-
-/* Elementos de la navbar */
 .nav-item {
   margin-right: 10px;
 }
 
-/* Anulando el color de fondo del botón primario de Bootstrap */
-.navbar .nav-link.btn-primary.active,
-.navbar .nav-link.btn-primary:active,
-.navbar .navbar .btn-primary.active,
-.navbar .navbar .btn-primary:active {
-    background-color: transparent !important;
+/* Para modificar OJO EH */
+/* Elementos de la navbar */
+/* .nav-item {
+  margin-right: 10px;
+    a {
+      color: #ffffff;
+      text-decoration: none;
+    } 
+    a:hover {
+      color: #000000;
+      text-decoration: none;
+    }
+    a:active {
+      color: #000000;
+      &:hover {
+        color: #000000;
+      }
+    }
+    a:focus {
+      color: #000000;
+      &:hover {
+        color: #000000;
+      }
+    }
+    a:visited {
+      color: #ffffff;
+      &:hover {
+        color: #000000;
+      }
+    }
+    .navbar-brand {
+      color: #ffffff;
+      &:hover {
+        color: #000000;
+      }
+} */
+
+.highlighted-text {
+  color: #ffffff; /* Color blanco */
+  border: 2px solid #000000; /* Borde negro de 2px */
+  padding: 4px; /* Añade un relleno de 4px alrededor del texto */
+  text-shadow: 
+      0 0 15px #000000, 
+      0 0 20px #000000, 
+      0 0 25px #000000, 
+      0 0 30px #000000, 
+      0 0 35px #000000, 
+      0 0 40px #000000, 
+      0 0 45px #000000, 
+      0 0 50px #000000; /* Sombras con diferentes tamaños e intensidades */
+  font-weight: bold; /* Texto en negrita */
+  border-radius: 10%;
 }
 
-/* ESTILOS DE LA NAVBAR */
+
+
+
 /* Botones de la navbar */
 .navbar .btn-primary,
 .navbar .btn-secondary {
@@ -96,22 +118,11 @@ body, h1, h2, h3, h4, h5, h6 {
   border: 2px solid #343a40;
 }
 
-.navbar .btn-primary:hover {
-  background-color: #ffffff;
-  color: #000000 !important;
-  border-color: #343a40;
-  transition: all 0.3s ease-in-out;
-}
-
-.navbar .btn-secondary {
-  background-color: #000000;
-  border: 2px solid #ffffff;
-}
-
+.navbar .btn-primary:hover,
 .navbar .btn-secondary:hover {
   background-color: #ffffff;
   color: #000000 !important;
-  border-color: #ffffff;
+  border-color: #343a40;
   transition: all 0.3s ease-in-out;
 }
 
@@ -126,18 +137,14 @@ body, h1, h2, h3, h4, h5, h6 {
   border-radius: 0;
 }
 
-/* Botón de modo oscuro activo */
-.dark-mode #dark-mode-btn {
+.dark-mode #dark-mode-btn:hover,
+#dark-mode-btn:hover {
   background-color: #ffffff !important;
   color: #000000 !important;
 }
 
-/* Botón de modo oscuro inactivo */
-#dark-mode-btn {
-  background-color: #343a40 !important;
-  color: #ffffff !important;
-}
 /* FIN de estilos de la  navbar */
+
 
 /* ESTILOS JUMBOTRON */
 .jumbotron {
