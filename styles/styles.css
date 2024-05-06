@@ -49,6 +49,53 @@ body, h1, h2, h3, h4, h5, h6 {
   margin-right: 10px;
 }
 
+/* CSS personalizado para cambiar el color de fondo de las opciones del menú cuando se mantienen presionadas */
+.dropdown-menu.show .dropdown-item:active,
+.dropdown-menu.show .dropdown-item:focus {
+  background-color: #ffffff; /* Cambia el color de fondo cuando se mantiene presionado el clic */
+}
+
+/* CSS personalizado para cambiar el color de las propiedades del botón */
+#custom-btn {
+  color: black ;
+  
+  --bs-btn-color: #000000; /* Cambia el color del texto del botón */
+  --bs-btn-active-bg: #ffffff; /* Cambia el color de fondo cuando el botón está activo */
+  --bs-btn-active-border-color: #000000;
+  --bs-btn-active-color: #000000; 
+}
+
+/* CSS personalizado para cambiar el color del texto del botón "Curriculum Vitae" cuando una opción del menú desplegable está seleccionada */
+.dropdown-menu.show .dropdown-item:active,
+.dropdown-menu.show .dropdown-item:focus {
+  background-color: #ffffff; /* Cambia el color de fondo cuando se mantiene presionado el clic */
+  color: #000 !important; /* Cambia el color del texto a negro */
+}
+
+/* Anula el color del texto de las opciones del menú desplegable dentro del botón "Curriculum Vitae" */
+.dropdown-toggle.cv-dropdown:focus,
+.dropdown-toggle.cv-dropdown:active {
+  color: #000 !important; /* Cambia el color del texto a negro */
+}
+/* Anula el color del texto del botón "Curriculum Vitae" cuando está activo */
+.dropdown-toggle:focus,
+.dropdown-toggle:active,
+.dropdown-toggle:active .dropdown-item:focus,
+.dropdown-toggle:focus .dropdown-item:active {
+  color: #000 !important; /* Cambia el color del texto a negro */
+}
+
+
+
+/* CSS personalizado para cambiar el color del texto cuando el botón está activo o tiene el foco */
+#custom-btn:active,
+#custom-btn:focus {
+ 
+  color: black !important; /* Cambia el color del texto a negro */
+}
+
+
+
 /* Para modificar OJO EH */
 /* Elementos de la navbar */
 /* .nav-item {
@@ -128,19 +175,17 @@ body, h1, h2, h3, h4, h5, h6 {
 
 /* Botón de versión en inglés */
 #english-version-btn {
-  color: black;
-  text-decoration: solid black 1px;
-  background: linear-gradient(to bottom, #b22234, #b22234 33%, #ffffff 33%, #ffffff 66%, #3c3b6e 66%);
-  border: 2px solid #ffffff;
+  background-image: url(../img/fondoversioningles.png);
   font-weight: 900;
   color: black !important; 
-  border-radius: 0;
+  border-radius: 10px;
 }
 
-.dark-mode #dark-mode-btn:hover,
-#dark-mode-btn:hover {
-  background-color: #ffffff !important;
-  color: #000000 !important;
+#english-version-btn:hover {
+  background-image: url(../img/fondoversioningles.png);
+  color: black !important;
+  border-color: white;
+  transition: all 0.3s ease-in-out;
 }
 
 /* FIN de estilos de la  navbar */
