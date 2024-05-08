@@ -252,6 +252,19 @@ body, h1, h2, h3, h4, h5, h6 {
     
 }
 
+/* .certificacion-img {
+  max-width: 65vh;
+  max-height: 40vh;
+} */
+.certificacion {
+  max-width: 100px; /* Ajusta el tamaño máximo de la certificación */
+  margin-right: 10px; /* Ajusta el margen derecho para espaciar las certificaciones */
+}
+
+.certificacion-img {
+  max-width: 70vh;
+  max-height: 40vh; /* Hace que las imágenes ocupen todo el ancho del contenedor */
+}
 
 
 /* FORMACION */
