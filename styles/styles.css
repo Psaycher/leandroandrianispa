@@ -1,5 +1,3 @@
-/* Paleta de colores::after
-Gris:
 
 /* Imagen de fondo modo CLARO */
 body.light-mode {
@@ -8,6 +6,7 @@ body.light-mode {
   background-repeat: no-repeat; /* Evita que la imagen se repita */
   background-size: cover; /* Cubre toda la pantalla */
   background-position: center; /* Centra la imagen */
+  color: #343a40;
 }
 
 .container-fluid {
@@ -24,11 +23,14 @@ body.dark-mode {
   background-position: center; /* Centra la imagen */
 }
 
+.dark-mode h2 {
+  color: #dee2e6
+}
+
 /* Fuentes */
 body, h1, h2, h3, h4, h5, h6 {
   font-family: 'Montserrat', sans-serif;
 }
-
 
 /* ESTILOS DE LA NAVBAR */
 /* FUENTES */
@@ -43,6 +45,7 @@ body, h1, h2, h3, h4, h5, h6 {
 .navbar {
   background-image: url(../img/navbarBackground.png);
   border: 2px solid rgba(0, 0, 0, 0.874);
+  
 }
 
 .nav-item {
@@ -85,8 +88,6 @@ body, h1, h2, h3, h4, h5, h6 {
   color: #000 !important; /* Cambia el color del texto a negro */
 }
 
-
-
 /* CSS personalizado para cambiar el color del texto cuando el botón está activo o tiene el foco */
 #custom-btn:active,
 #custom-btn:focus {
@@ -94,60 +95,16 @@ body, h1, h2, h3, h4, h5, h6 {
   color: black !important; /* Cambia el color del texto a negro */
 }
 
-
-
-/* Para modificar OJO EH */
-/* Elementos de la navbar */
-/* .nav-item {
-  margin-right: 10px;
-    a {
-      color: #ffffff;
-      text-decoration: none;
-    } 
-    a:hover {
-      color: #000000;
-      text-decoration: none;
-    }
-    a:active {
-      color: #000000;
-      &:hover {
-        color: #000000;
-      }
-    }
-    a:focus {
-      color: #000000;
-      &:hover {
-        color: #000000;
-      }
-    }
-    a:visited {
-      color: #ffffff;
-      &:hover {
-        color: #000000;
-      }
-    }
-    .navbar-brand {
-      color: #ffffff;
-      &:hover {
-        color: #000000;
-      }
-} */
-
 .highlighted-text {
   color: #ffffff; /* Color blanco */
-  border: 2px solid #000000; /* Borde negro de 2px */
-  padding: 4px; /* Añade un relleno de 4px alrededor del texto */
+  padding: 10px; /* Añade un relleno de 4px alrededor del texto */
   text-shadow: 
-      0 0 15px #000000, 
-      0 0 20px #000000, 
-      0 0 25px #000000, 
-      0 0 30px #000000, 
-      0 0 35px #000000, 
-      0 0 40px #000000, 
-      0 0 45px #000000, 
-      0 0 50px #000000; /* Sombras con diferentes tamaños e intensidades */
+  -1px -1px 10px rgb(0, 0, 0), /* Sombras hacia arriba y a la izquierda */
+  1px -1px 10px rgb(0, 0, 0), /* Sombras hacia arriba y a la derecha */
+  -1px 1px 10px rgb(0, 0, 0), /* Sombras hacia abajo y a la izquierda */
+  1px 1px 10px rgb(0, 0, 0); /* Sombras hacia abajo y a la derecha */
   font-weight: bold; /* Texto en negrita */
-  border-radius: 10%;
+  
 }
 
 
@@ -175,17 +132,32 @@ body, h1, h2, h3, h4, h5, h6 {
 
 /* Botón de versión en inglés */
 #english-version-btn {
-  background-image: url(../img/fondoversioningles.png);
+  background-image: url(../img/fondobtn.png);
+  background-repeat: no-repeat;
+  background-position: center;
   font-weight: 900;
-  color: black !important; 
+  color: black !important;
   border-radius: 10px;
+  text-shadow: 
+    -1px -1px 10px white, /* Sombras hacia arriba y a la izquierda */
+    1px -1px 10px white, /* Sombras hacia arriba y a la derecha */
+    -1px 1px 10px white, /* Sombras hacia abajo y a la izquierda */
+    1px 1px 10px white; /* Sombras hacia abajo y a la derecha */
 }
 
+
 #english-version-btn:hover {
-  background-image: url(../img/fondoversioningles.png);
-  color: black !important;
+  background-image: url(../img/fondobtn.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white !important;
   border-color: white;
   transition: all 0.3s ease-in-out;
+  text-shadow: 
+  -1px -1px 10px rgb(0, 0, 0), /* Sombras hacia arriba y a la izquierda */
+  1px -1px 10px rgb(0, 0, 0), /* Sombras hacia arriba y a la derecha */
+  -1px 1px 10px rgb(0, 0, 0), /* Sombras hacia abajo y a la izquierda */
+  1px 1px 10px rgb(0, 0, 0); /* Sombras hacia abajo y a la derecha */
 }
 
 /* FIN de estilos de la  navbar */
@@ -224,6 +196,19 @@ body, h1, h2, h3, h4, h5, h6 {
   color: #ffffff;
 }
 
+/* SOBRE MI */
+
+.extra-padding-top {
+    padding-top: 100px; /* Ajusta este valor según tus necesidades */
+  }
+
+
+  .extra-padding-bottom {
+    padding: 100px;
+    margin-bottom: 50px;
+    padding-bottom: 300px;
+  }
+
 /* MODIFICACAIONES AL CARROUSEL */
 
 #carouselExampleCaptions .carousel-control-prev,
@@ -252,6 +237,7 @@ body, h1, h2, h3, h4, h5, h6 {
 
 .carousel-caption h5,
 .carousel-caption p {
+  color: white;
   font-family: 'Montserrat', sans-serif; /* Tipo de fuente */
   font-size: 1.5rem; /* Tamaño del texto */
   font-weight: bold;
@@ -326,15 +312,6 @@ body, h1, h2, h3, h4, h5, h6 {
 
 
 
-/* Modo oscuro */
-.dark-mode {
-  background-color: #343a40;
-  color: #ffffff;
-}
-
-.dark-mode .jumbotron {
-  background-color: #000000;
-}
 
 /* Botón activo */
 .active-btn {
@@ -370,4 +347,14 @@ body, h1, h2, h3, h4, h5, h6 {
 .navbar .dropdown-menu #curriculum-btn.dropdown-item.active,
 .navbar .dropdown-menu #curriculum-btn.dropdown-item:active {
     background-color: transparent !important;
+}
+
+/* CONTACTO */
+
+.custom-shadow {
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.4), 0 -12px 20px rgba(0, 0, 0, 0.4), -12px 0 20px rgba(0, 0, 0, 0.4), 12px 0 20px rgba(0, 0, 0, 0.4);
+}
+
+#contacto {
+  padding-bottom: 20px; /* Ajusta este valor según tus necesidades */
 }
